@@ -1,0 +1,231 @@
+" =======================================================
+" Vim configuration file
+" Author: Lucas Lira Gomes <x8lucas8x@gmail.com> 
+" ~/.vimrc
+" =======================================================
+
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" the bundles you install will be listed here
+
+Plugin 'itchyny/lightline.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'klen/python-mode'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/syntastic'
+Plugin 'ervandew/supertab'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'Yggdroot/indentLine'
+Plugin 'kien/ctrlp.vim'
+Plugin 'msanders/snipmate.vim'
+Plugin 'scrooloose/nerdcommenter'
+Bundle 'lsdr/monokai'
+
+" the rest of your config follows here
+
+syntax on
+filetype plugin on
+filetype plugin indent on
+nnoremap :set nonumber!: set foldcolumn=0
+
+" rope
+let g:pymode_rope = 0
+let g:pymode_rope_lookup_project = 0
+
+" documentation
+let g:pymode_doc = 1
+let g:pymode_doc_key = 'K'
+
+" linting
+let g:pymode_lint = 0
+
+" support virtualenv
+let g:pymode_virtualenv = 1
+
+" syntax highlighting
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
+" enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" better smart indent for Python
+autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+
+" disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+
+" use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+
+" use smartcase.
+let g:neocomplete#enable_smart_case = 1
+
+" set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+
+let g:tagbar_usearrows = 1
+
+set foldmethod=indent
+set foldlevel=99
+set mouse=a
+set spelllang=en,uk,br
+set whichwrap=b,s,<,>,[,]
+set number
+set background=dark
+set ts=2 sw=2 et
+
+set title                     " show title in console title bar
+set wildmenu                  " Menu completion in command mode on <Tab>
+set wildmode=full             " <Tab> cycles between all matching choices.
+
+" automatically change window's cwd to file's dir
+set autochdir
+
+" don't bell or blink
+set noerrorbells
+set vb t_vb=
+ 
+" ignore these files when completing
+set wildignore+=*.o,*.obj,.git,*.pyc,*~
+
+" always show current position
+set ruler
+
+" configure backspace so it acts as it should act
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+
+" ignore case when searching
+set ignorecase
+
+" show matching brackets when text indicator is over them
+set showmatch
+
+" how many tenths of a second to blink when matching brackets
+set mat=2
+
+" no annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+" use spaces instead of tabs
+set expandtab
+
+" be smart when using tabs ;)
+set smarttab
+
+" 1 tab == 4 spaces
+set shiftwidth=4
+set tabstop=4
+
+" linebreak on 500 characters
+set lbr
+set tw=500
+
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap lines
+
+" reading/writing
+set noautowrite             " Never write a file unless I request it.
+set noautowriteall          " NEVER.
+set noautoread              " Don't automatically re-read changed files.
+set modeline                " Allow vim options to be embedded in files;
+set modelines=5             " they must be within the first or last 5 lines.
+set ffs=unix,dos,mac        " Try recognizing dos, unix, and mac line endings.
+
+" always show the status line
+set laststatus=2
+
+" turn backup off, since most stuff is in SVN, git et.c anyway...
+set nobackup
+set nowb
+set noswapfile
+
+" remove trailing space on file save
+autocmd BufWritePre *.py :%s/\s\+$//e
+
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+
+" ctrlP
+set wildignore+=*/tmp/*,*/__pycache__/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+" nerdTree
+let NERDTreeIgnore = ['\.pyc$', '__pycache__', '\.lo$', '\.o$', '\.la$']
+
+" set colorscheme
+colors molokai
+
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+
+au VimEnter * RainbowParenthesesActivate
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+" shortcuts
+nmap <F2> :w<CR>
+map <F12> :q<CR>
+map <C-F12> :q!<CR>
+map <UP> <NOP>
+map <DOWN> <NOP>
+map <LEFT> :bprevious<CR>
+map <RIGHT> :bnext<CR>
+nmap <F8> :NERDTreeToggle<CR>
+nmap <F9> :TagbarToggle<CR>
+nmap <F10> :SyntasticCheck<CR>
+
+" use <leader>l to toggle display of whitespace
+nmap <leader>l :set list!<CR>
+
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }

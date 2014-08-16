@@ -1,0 +1,26 @@
+[user]
+    name = Lucas Lira Gomes
+    email = x8lucas8x@gmail.com
+
+[core]
+    editor = vim
+
+[alias]
+    s = status
+    c = commit
+    r = rebase
+    m = merge
+    l = log
+    b = branch
+    a = add
+
+[color]
+    branch = true
+    diff = true
+    ui = true
+
+[commit]
+    template = ~/.committemplate
+
+[merge]
+    tool = kdiff3

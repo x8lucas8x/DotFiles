@@ -30,7 +30,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'kien/ctrlp.vim'
 Plugin 'msanders/snipmate.vim'
 Plugin 'scrooloose/nerdcommenter'
-Bundle 'lsdr/monokai'
+Bundle 'tomasr/molokai'
 
 " the rest of your config follows here
 
@@ -211,7 +211,7 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 " shortcuts
-nmap <F2> :w<CR>
+map <F2> :w<CR>
 map <F12> :q<CR>
 map <C-F12> :q!<CR>
 map <UP> <NOP>

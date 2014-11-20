@@ -196,13 +196,12 @@ bindsym Mod1+i exec --no-startup-id chromium --incognito
 bindsym Mod1+p exec --no-startup-id pavucontrol
 bindsym Mod1+v exec --no-startup-id qvim
 bindsym Mod1+q exec --no-startup-id qtcreator
-bindsym Mod1+t exec --no-startup-id thunar
+bindsym Mod1+d exec --no-startup-id dolphin
 
 #bindcode 33 exec --no-startup-id /home/michael/toggle_beamer.sh
 
 # startup
 exec --no-startup-id start-pulseaudio-x11 &
-exec --no-startup-id sudo dropboxd --start & 
 exec --no-startup-id xrdb -merge ~/.Xresources
 exec --no-startup-id xset dpms 600
 exec --no-startup-id setxkbmap -model pc104 -layout br

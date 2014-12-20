@@ -8,9 +8,12 @@
 
 dir=~/DotFiles/files                                    # dotfiles directory
 olddir=~/DotFilesOld                                    # old dotfiles backup directory
-files="bashrc vimrc zshrc gitconfig committemplate Xresources"     # list of files/folders to symlink in homedir
+files="bashrc vimrc zshrc Xresources "
+files+="gitconfig gitignore committemplates"            # list of files/folders to symlink in homedir
 
 ##########
+echo "##############################################"
+echo "Installing dot files..."
 
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
@@ -29,3 +32,4 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+echo "##############################################"

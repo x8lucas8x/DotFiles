@@ -57,6 +57,12 @@ command cowthink $(fortune)
 # Default editor
 export EDITOR="vim"
 
+# Keys
+bindkey '^[[1;5C' emacs-forward-word
+bindkey '^[[1;5D' emacs-backward-word
+bindkey '^[[1;2D' beginning-of-line
+bindkey '^[[1;2C' end-of-line
+
 # Aliases
 alias ..='cd ..'
 alias ...='cd ../..'

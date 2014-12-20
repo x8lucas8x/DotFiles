@@ -214,10 +214,6 @@ au Syntax * RainbowParenthesesLoadBraces
 map <F2> :w<CR>
 map <F12> :q<CR>
 map <C-F12> :q!<CR>
-map <UP> <NOP>
-map <DOWN> <NOP>
-map <LEFT> :bprevious<CR>
-map <RIGHT> :bnext<CR>
 nmap <F8> :NERDTreeToggle<CR>
 nmap <F9> :TagbarToggle<CR>
 nmap <F10> :SyntasticCheck<CR>

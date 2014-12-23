@@ -166,6 +166,10 @@ set nobackup
 set nowb
 set noswapfile
 
+" more natural split opening
+set splitbelow
+set splitright
+
 " remove trailing space on file save
 autocmd BufWritePre *.py :%s/\s\+$//e
 
@@ -217,6 +221,11 @@ map <C-F12> :q!<CR>
 nmap <F8> :NERDTreeToggle<CR>
 nmap <F9> :TagbarToggle<CR>
 nmap <F10> :SyntasticCheck<CR>
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " use <leader>l to toggle display of whitespace
 nmap <leader>l :set list!<CR>

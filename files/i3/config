@@ -208,5 +208,3 @@ exec --no-startup-id setxkbmap -model pc104 -layout br
 
 exec chromium
 exec spotify
-exec hipchat
-

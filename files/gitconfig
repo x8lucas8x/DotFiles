@@ -9,11 +9,22 @@
 [alias]
     s = status
     c = commit
-    r = rebase
-    m = merge
     l = log
+    d = diff
     b = branch
     a = add
+    co = checkout
+    st = stash
+    sta = stash apply
+    stl = stash list
+    psh = push
+    pll = pull
+    rmt = remote
+    mrg = merge
+    rbs = rebase
+    rst = reset
+    ca = commit --amend -C HEAD
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [color]
     branch = true

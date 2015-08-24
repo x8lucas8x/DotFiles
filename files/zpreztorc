@@ -28,7 +28,6 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'syntax-highlighting' \
   'history-substring-search' \
-  'git' \
   'pacman'
 
 #
@@ -46,7 +45,7 @@ zstyle ':prezto:module:editor' keymap 'emacs'
 #
  
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
-zstyle ':prezto:module:git:status:ignore' submodules 'all'
+# zstyle ':prezto:module:git:status:ignore' submodules 'all'
  
 #
 # GNU Utility

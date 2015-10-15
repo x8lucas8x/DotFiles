@@ -98,6 +98,8 @@ alias yu='yaourt -Su'
 
 alias py3='ipython3'
 alias py2='ipython2'
+alias cpy3='python3'
+alias cpy2='python2'
 
 alias shutdown='systemctl poweroff'
 alias hibernate='systemctl hibernate'

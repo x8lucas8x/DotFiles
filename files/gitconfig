@@ -14,9 +14,9 @@
     b = branch
     a = add
     co = checkout
-    st = stash
-    sta = stash apply
-    stl = stash list
+    stsh = stash
+    stsha = stash apply
+    stshl = stash list
     psh = push
     pll = pull
     rmt = remote

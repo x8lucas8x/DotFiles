@@ -96,8 +96,8 @@ alias yi='yaourt -S'
 alias yr='yaourt -R'
 alias yu='yaourt -Su'
 
-alias p3='ipython3'
-alias p2='ipython2'
+alias py3='ipython3'
+alias py2='ipython2'
 
 alias shutdown='systemctl poweroff'
 alias hibernate='systemctl hibernate'

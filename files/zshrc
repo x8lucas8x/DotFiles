@@ -40,9 +40,6 @@ setopt EXTENDED_HISTORY
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_FIND_NO_DUPS
-
-#}}}
-
 setopt no_complete_aliases
 
 # The following lines were added by compinstall
@@ -69,6 +66,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias cls='clear'
 alias vi='vim'
+alias ll='ls -lha'
 
 alias g='git'
 alias ga='g a'

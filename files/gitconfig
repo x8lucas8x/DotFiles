@@ -13,6 +13,7 @@
     d = diff
     b = branch
     a = add
+    f = fetch
     co = checkout
     stsh = stash
     stsha = stash apply

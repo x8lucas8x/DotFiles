@@ -1,0 +1,36 @@
+#!/bin/bash
+
+alias .home='cd ~'
+alias .root='cd /'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias cls='clear'
+alias vi='vim'
+alias ls='ls -lh'
+alias lsa='ls -lha'
+alias mkdir='mkdir -p'  # Create all directories leading up to given dir that DNE
+alias du='du -kh'  # Makes a more readable output.
+alias df='df -kTh'
+alias myip="curl http://ipecho.net/plain; echo"
+
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+
+alias h='history'
+alias hg='h | grep'
+
+# Do not delete / or prompt if deleting more than 3 files at a time
+alias rm='rm -I --preserve-root'
+ 
+# Confirmation
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+ 
+# Parenting changing perms on /
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+alias tm='tmux'
+alias tmls='tm ls'
+alias tma='tm attach -t'
+alias tmd='tm kill-session -t'
+alias tmn='tm new -s' 

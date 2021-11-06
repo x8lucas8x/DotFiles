@@ -1,0 +1,8 @@
+#!/bin/bash
+
+alias bw='brew'
+alias bws='bw search'
+alias bwi='bw install'
+alias bwi='bw uninstall'
+alias bwl='bw list'
+alias bwi='bw info'

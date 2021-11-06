@@ -1,0 +1,8 @@
+#!/bin/bash
+
+alias y='yaourt'
+alias yy='yaourt -Sy'
+alias ys='yaourt -Ss'
+alias yi='yaourt -S'
+alias yr='yaourt -R'
+alias yu='yaourt -Su'

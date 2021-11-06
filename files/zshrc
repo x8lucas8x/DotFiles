@@ -1,106 +1,19 @@
 #!/bin/bash
 
-#{{{ History Stuff
+# Oh My ZSH
 
-# Where it gets saved
-HISTFILE=~/.history
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
 
-# Remember about a years worth of history (AWESOME)
-SAVEHIST=10000
-HISTSIZE=10000
+ZSH_THEME="agnoster"
+skip_global_compinit=1
 
-# Don't overwrite, append!
-setopt APPEND_HISTORY
+source $ZSH/oh-my-zsh.sh
 
-# Write after each command
-# setopt INC_APPEND_HISTORY
+# Bashrc
+source ~/.bashrc
 
-# Killer: share history between multiple shells
-setopt SHARE_HISTORY
-
-# If I type cd and then cd again, only save the last one
-setopt HIST_IGNORE_DUPS
-
-# Even if there are commands inbetween commands that are the same, still only save the last one
-setopt HIST_IGNORE_ALL_DUPS
-
-# Pretty    Obvious.  Right?
-setopt HIST_REDUCE_BLANKS
-
-# If a line starts with a space, don't save it.
-setopt HIST_IGNORE_SPACE
-setopt HIST_NO_STORE
-
-# When using a hist thing, make a newline show the change before executing it.
-setopt HIST_VERIFY
-
-# Save the time and HIST_SAVE_NO_DUPSow long a command ran
-setopt EXTENDED_HISTORY
-
-setopt HIST_SAVE_NO_DUPS
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt HIST_FIND_NO_DUPS
-setopt no_complete_aliases
-
-# The following lines were added by compinstall
-zstyle :compinstall filename '~/.zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-
-command cowthink $(fortune)
-
-# Default editor
-export EDITOR="vim"
-
-# Keys
-bindkey '^[[1;5C' emacs-forward-word
-bindkey '^[[1;5D' emacs-backward-word
-bindkey '^[[1;2D' beginning-of-line
-bindkey '^[[1;2C' end-of-line
-
-# Aliases
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias cls='clear'
-alias vi='vim'
-alias ll='ls -lha'
-
-alias g='git'
-alias ga='g a'
-alias gc='g c'
-alias gb='g b'
-alias gd='g d'
-alias gs='g s'
-alias gf='g f'
-alias gca='g ca'
-alias gco='g co'
-alias gpll='g pll'
-alias gpsh='g psh'
-alias grmt='g rmt'
-alias grst='g rst'
-alias gmrg='g mrg'
-alias grbs='g rbs'
-alias gl='g lg'
-alias glp='g lg -p'
-alias gstsh='g stsh'
-alias gstha='g stsha'
-alias gstshl='g stshl'
-
-alias y='yaourt'
-alias yy='yaourt -Sy'
-alias ys='yaourt -Ss'
-alias yi='yaourt -S'
-alias yr='yaourt -R'
-alias yu='yaourt -Su'
-
-alias py3='ipython3'
-alias py2='ipython2'
-alias cpy3='python3'
-alias cpy2='python2'
-
-alias shutdown='systemctl poweroff'
-alias hibernate='systemctl hibernate'
-alias suspend='systemctl suspend'
+# For any extra non committed zshrc bits
+if [ -f ~/.zshrc.local ]; then
+    source ~/.zshrc.local
+fi

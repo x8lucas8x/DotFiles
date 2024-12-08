@@ -1,0 +1,8 @@
+#!/bin/bash
+
+alias y='yay'
+alias yy='yay -Sy'
+alias ys='yay -Ss'
+alias yi='yay -S'
+alias yr='yay -R'
+alias yu='yay -Su'

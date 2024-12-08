@@ -1,0 +1,7 @@
+#!/bin/bash
+
+alias fz='vim $(fzf --multi --preview="bat --color=always {}")'
+alias fz-env='env | fzf --multi'
+alias fz-ps='ps -aux | fzf --multi'
+alias fz-alias='alias | fzf --multi'
+alias fz-function='functions | fzf'

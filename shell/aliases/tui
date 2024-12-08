@@ -1,0 +1,6 @@
+#!/bin/bash
+
+alias ttop=btop
+alias tgit=lazygit
+alias tnetworkmanager=nmtui
+alias tfilemanager=yazi

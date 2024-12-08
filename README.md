@@ -4,5 +4,6 @@ Configuration files for editors and other UNIX tools. These make it easier for m
 # How to run
  ```
  chmod +x install.sh
- ./install.sh
+ ./install-mac.sh
+ ./install-arch.sh
  ``` 

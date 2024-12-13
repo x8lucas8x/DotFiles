@@ -1,15 +1,16 @@
 #!/bin/bash
 
-alias .home='cd ~'
-alias .root='cd /'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
+alias .home='z ~'
+alias .root='z /'
+alias ..='z ..'
+alias ...='z ../..'
+alias ....='z ../../..'
 
 alias cls='clear'
+alias df='duf'
 alias vi='vim'
-alias ls='ls -lh'
-alias lsa='ls -lha'
+alias ls='eza -lh'
+alias lsa='eza -lha'
 alias mkdir='mkdir -p' # Create all directories leading up to given dir that DNE
 alias du='du -kh'      # Makes a more readable output.
 alias df='df -kTh'
@@ -33,4 +34,3 @@ alias ln='ln -i'
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
-

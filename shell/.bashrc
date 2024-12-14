@@ -17,6 +17,7 @@ fi
 eval "$(starship init bash)"
 eval "$(fzf --bash)"
 eval "$(zellij setup --generate-auto-start bash)"
+eval "$(zoxide init bash)"
 
 # Show header
 type fastfetch &>/dev/null && fastfetch

@@ -26,6 +26,7 @@ fi
 eval "$(starship init zsh)"
 source <(fzf --zsh)
 eval "$(zellij setup --generate-auto-start zsh)"
+eval "$(zoxide init zsh)"
 
 # Show header
 type fastfetch &> /dev/null && fastfetch

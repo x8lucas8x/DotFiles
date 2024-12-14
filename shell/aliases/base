@@ -5,15 +5,16 @@ alias .root='z /'
 alias ..='z ..'
 alias ...='z ../..'
 alias ....='z ../../..'
+alias cd='z'
 
 alias cls='clear'
-alias df='duf'
-alias vi='vim'
+alias vi='nvim'
+alias vim='nvim'
 alias ls='eza -lh'
 alias lsa='eza -lha'
 alias mkdir='mkdir -p' # Create all directories leading up to given dir that DNE
 alias du='du -kh'      # Makes a more readable output.
-alias df='df -kTh'
+alias df='duf'
 
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'

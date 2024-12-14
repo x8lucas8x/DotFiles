@@ -1,0 +1,53 @@
+[Dolphin]
+Description=Dolphin
+desktops=ac8a68fa-de0f-4dad-bdde-b355fa2e6922
+desktopsrule=2
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+wmclass=dolphin org.kde.dolphin
+wmclasscomplete=true
+wmclassmatch=1
+
+[Lutris]
+Description=Lutris
+desktops=52e241c2-f7c1-4ece-9e76-9ed27a5b857c
+desktopsrule=2
+wmclass=python3.12 net.lutris.Lutris
+wmclasscomplete=true
+wmclassmatch=1
+
+[Settings]
+Description=Settings
+desktops=41d7d2c1-1aad-4033-b3c1-a6490e6988d6
+desktopsrule=2
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+types=1
+wmclass=systemsettings systemsettings
+wmclasscomplete=true
+wmclassmatch=1
+
+[Spotify]
+Description=Spotify
+desktops=1de42d00-de9f-4d07-a462-5bf7ed2616d7
+desktopsrule=2
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+title=Spotify
+titlematch=1
+wmclass=Spotify
+wmclassmatch=1
+
+[Steam]
+Description=Steam
+desktops=52e241c2-f7c1-4ece-9e76-9ed27a5b857c
+desktopsrule=2
+wmclass=steamwebhelper steam
+wmclasscomplete=true
+wmclassmatch=1

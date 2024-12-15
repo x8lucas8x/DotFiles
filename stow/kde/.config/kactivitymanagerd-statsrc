@@ -1,0 +1,5 @@
+[Favorites-org.kde.plasma.kickoff.favorites.instance-3-745a1ac4-994c-4cf0-b6bf-b65edd663e49]
+ordering=applications:org.kde.dolphin.desktop,preferred://browser
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-3-global]
+ordering=applications:org.kde.dolphin.desktop,preferred://browser

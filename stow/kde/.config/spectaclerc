@@ -1,0 +1,18 @@
+[$Version]
+update_info=spectacle_clipboard.upd:clipboard-settings-change,spectacle_rememberregion.upd:spectacle-migrate-rememberregion
+
+[GuiConfig]
+captureMode=0
+
+[ImageSave]
+lastImageSaveAsLocation=file:///home/llira/Documents/tubeExtensionFromZoneCInBERAirport.png
+lastImageSaveLocation=file:///home/llira/Documents/tubeExtensionFromZoneCInBERAirport.png
+translatedScreenshotsFolder=Screenshots
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Documents/tubeBackToAirport.png,file:$HOME/Documents/tubeExtensionFromZoneCInBERAirport.png,file:$HOME/Documents/tubeExtensionToZoneCInBERAirport.png,file:$HOME/Documents/dinnerDay2.png,file:$HOME/Documents/lunchDay4.png,file:$HOME/Documents/lunchDay3.png,file:$HOME/Documents/lunchDay2.png,file:$HOME/Documents/lunchDay1.png,file:$HOME/Documents/tubeFromAirport.png,file:$HOME/Documents/tubeDay1.png,file:$HOME/Documents/tubeDay2.png
+Recent URLs[$e]=file:$HOME/Documents/,file:$HOME/
+detailViewIconSize=16
+
+[VideoSave]
+translatedScreencastsFolder=Screencasts

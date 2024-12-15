@@ -1,0 +1,10 @@
+[FileDialogSize]
+1920x1080 screen: Window-Maximized=true
+
+[MainWindow]
+0x0 screen: Height=700
+0x0 screen: Width=1020
+MenuBar=Disabled
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAAA/wAAAK8AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled

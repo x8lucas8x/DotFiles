@@ -1,0 +1,37 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[General]
+LastUsedVersion=210800
+
+[MainWindow]
+1920x1080 screen: Height=701
+1920x1080 screen: Width=732
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAAtwAAAKPAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/20230819_115939.jpg
+File10[$e]=$HOME/Downloads/20240921-181556018.jpg
+File2[$e]=$HOME/SpiderOak Hive/documentos/Immigration/Barbara/2023/lucasGruntalerStr17Anmeldung.jpg
+File3[$e]=$HOME/SpiderOak Hive/documentos/Immigration/Barbara/2023/barbaraGruntalerStr17Anmeldung.jpg
+File4[$e]=$HOME/SpiderOak Hive/documentos/Id/lucasLiraGomesPassport.png
+File5[$e]=$HOME/SpiderOak Hive/documentos/Id/lucasLiraGomesPermanentVisa.jpg
+File6[$e]=$HOME/Downloads/20230819_115950.jpg
+File7[$e]=$HOME/Downloads/20240417_084401.jpg
+File8[$e]=$HOME/Downloads/20240417_084409.jpg
+File9[$e]=$HOME/Downloads/20240815_093748.jpg
+Name1[$e]=20230819_115939.jpg
+Name10[$e]=20240921-181556018.jpg
+Name2[$e]=lucasGruntalerStr17Anmeldung.jpg
+Name3[$e]=barbaraGruntalerStr17Anmeldung.jpg
+Name4[$e]=lucasLiraGomesPassport.png
+Name5[$e]=lucasLiraGomesPermanentVisa.jpg
+Name6[$e]=20230819_115950.jpg
+Name7[$e]=20240417_084401.jpg
+Name8[$e]=20240417_084409.jpg
+Name9[$e]=20240815_093748.jpg
+
+[SideBar]
+InformationSplitterSizes=212,243

@@ -6,8 +6,8 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
-ItemGeometries-1920x1080=Applet-32:1344,320,496,304,0;Applet-35:1344,0.9248,496,320,0;Applet-80:1360,704,464,96,0;Applet-63:1344,624,496,64,0;
-ItemGeometriesHorizontal=Applet-32:1344,320,496,304,0;Applet-35:1344,0.9248,496,320,0;Applet-80:1360,704,464,96,0;Applet-63:1344,624,496,64,0;
+ItemGeometries-1920x1080=Applet-32:1344,320,496,304,0;Applet-63:1344,624,496,64,0;Applet-80:1360,704,464,96,0;
+ItemGeometriesHorizontal=Applet-32:1344,320,496,304,0;Applet-63:1344,624,496,64,0;Applet-80:1360,704,464,96,0;
 activityId=745a1ac4-994c-4cf0-b6bf-b65edd663e49
 formfactor=0
 immutability=1
@@ -272,7 +272,7 @@ knownItems=org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasm
 activityId=
 formfactor=2
 immutability=1
-lastScreen=-1
+lastScreen=0
 location=0
 plugin=org.kde.plasma.private.systemtray
 wallpaperplugin=org.kde.image
@@ -466,4 +466,4 @@ knownItems=org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasm
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/SpiderOak Hive,0,745a1ac4-994c-4cf0-b6bf-b65edd663e49,desktop:/chrome-pfodfcmknipfpeiabaappdehaeeaelif-Default.desktop,0,745a1ac4-994c-4cf0-b6bf-b65edd663e49
+screenMapping=desktop:/chrome-pfodfcmknipfpeiabaappdehaeeaelif-Default.desktop,0,745a1ac4-994c-4cf0-b6bf-b65edd663e49,desktop:/SpiderOak Hive,0,745a1ac4-994c-4cf0-b6bf-b65edd663e49

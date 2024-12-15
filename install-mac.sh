@@ -6,4 +6,6 @@ brew install --cask kitty font-fira-code-nerd-font \
   font-cascadia-code-nf font-cascadia-mono-nf
 
 echo "Running stow..."
-stow -S */
+cd stow
+stow -v -R * --target=$HOME
+cd ..

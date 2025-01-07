@@ -16,7 +16,6 @@ fi
 # Custom
 eval "$(starship init bash)"
 eval "$(fzf --bash)"
-eval "$(zellij setup --generate-auto-start bash)"
 eval "$(zoxide init bash)"
 
 # Show header

@@ -10,12 +10,12 @@ skip_global_compinit=1
 source $ZSH/oh-my-zsh.sh
 
 # Load env variables
-source $HOME/.env                                                                 
-                                                                                    
+source $HOME/.env
+
 # Aliases
-for f in $HOME/aliases/*; do                                                      
-  source $f                                                                                
-done 
+for f in $HOME/aliases/*; do
+  source $f
+done
 
 # For any extra non committed zshrc bits
 if [ -f $HOME/.zshrc.local ]; then
@@ -25,7 +25,6 @@ fi
 # Custom
 eval "$(starship init zsh)"
 source <(fzf --zsh)
-eval "$(zellij setup --generate-auto-start zsh)"
 eval "$(zoxide init zsh)"
 
 # Show header

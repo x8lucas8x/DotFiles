@@ -1,0 +1,8 @@
+#!/bin/bash
+
+alias kdiff="kitten diff"
+alias kicat="kitten icat"
+alias kssh="kitten ssh"
+alias kpaste="kitten clipboard --get-clipboard"
+alias kcopy="kitten clipboard"
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+alias zls="zellij list-sessions --reverse"
+alias za="zellij attach"
+alias zd="zellij delete-session"

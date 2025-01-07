@@ -5,3 +5,4 @@ alias fz-env='env | fzf --multi'
 alias fz-ps='ps -aux | fzf --multi'
 alias fz-alias='alias | fzf --multi'
 alias fz-function='functions | fzf'
+alias fz-za="zellij list-sessions --reverse --no-formatting | fzf | awk '{print $1}' | zellij attach"

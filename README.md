@@ -7,6 +7,7 @@ They include things, such as:
 - neovim
 - starship
 - kitty
+- wezterm
 - zellij
 - yazi
 - zoxide

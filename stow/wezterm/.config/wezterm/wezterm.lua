@@ -11,6 +11,7 @@ config.font_size = 14
 config.color_scheme = "GruvboxDarkHard"
 config.cursor_blink_rate = 0
 config.default_cursor_style = "SteadyBar"
+config.enable_scroll_bar = true
 
 function make_copy_mouse_binding(streak, button, mods)
 	return {

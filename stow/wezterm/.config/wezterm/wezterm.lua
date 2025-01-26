@@ -5,10 +5,9 @@ config.disable_default_key_bindings = true
 config.window_background_opacity = 0.8
 config.scrollback_lines = 200000
 config.use_fancy_tab_bar = true
-config.window_frame = {
-	font = wezterm.font({ family = "CaskaydiaCove Nerd Font Mono", weight = "Bold" }),
-	font_size = 14,
-}
+
+config.font = wezterm.font("CaskaydiaCove Nerd Font Mono", { weight = "Bold", stretch = "Normal", style = "Normal" })
+config.font_size = 14
 config.color_scheme = "GruvboxDarkHard"
 config.cursor_blink_rate = 0
 config.default_cursor_style = "SteadyBar"

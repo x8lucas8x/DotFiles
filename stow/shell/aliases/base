@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/fish
 
 alias .home='z ~'
 alias .root='z /'

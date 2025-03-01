@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/fish
 
 alias zls="zellij list-sessions --reverse"
 alias za="zellij attach"

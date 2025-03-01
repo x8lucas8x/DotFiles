@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/fish
 
 alias tm='tmux'
 alias tmls='tm ls'

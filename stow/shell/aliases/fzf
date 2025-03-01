@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/fish
 
 alias fz='vim $(fzf --multi --preview="bat --color=always {}")'
 alias fz-env='env | fzf --multi'

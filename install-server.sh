@@ -3,7 +3,7 @@
 # Missing: neovim stow btop htop fastfetch
 
 echo "Install Rust CLIs"
-cargo install zoxide eza starship zellij bat duf sd yazi-fm yazi-cli
+cargo install fish zoxide eza starship zellij bat duf sd yazi-fm yazi-cli
 
 echo "install Go CLIs"
 go install github.com/jesseduffield/lazygit@latest github.com/junegunn/fzf@latest

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/fish
 
 alias kdiff="kitten diff"
 alias kicat="kitten icat"

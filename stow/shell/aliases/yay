@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/fish
 
 alias y='yay'
 alias yy='yay -Sy'

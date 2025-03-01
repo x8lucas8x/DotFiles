@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/fish
 
 alias py3='ipython3'
 alias py2='ipython2'

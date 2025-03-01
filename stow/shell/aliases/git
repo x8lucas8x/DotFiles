@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/fish
 
 alias g='git'
 alias ga='g a'

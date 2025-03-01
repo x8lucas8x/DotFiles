@@ -1,0 +1,22 @@
+#!/bin/fish
+
+# Load env variables
+source $HOME/.env
+
+# Aliases
+for f in $HOME/aliases/*
+  source $f
+end
+
+# For any extra non committed fishrc bits
+if [ -f $HOME/.fishrc.local ]
+  source $HOME/.fishrc.local
+end
+
+# Custom
+starship init fish | source
+fzf --fish | source
+zoxide init fish | source
+
+# Show header
+type fastfetch &>/dev/null && fastfetch

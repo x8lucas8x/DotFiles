@@ -14,7 +14,7 @@ They include things, such as:
 - fzf
 - lazygit
 - Nerd fonts
-- zsh
+- fish
 
 ## How to install?
 
@@ -53,8 +53,7 @@ a **~/.env.local** file, before first committing.
 If available on your home directory, the following files will be used to
 extend whatever is defined on the **stow/shell** folder:
 
-- ~/.bashrc.local
-- ~/.zshrc.local
+- ~/.fishrc.local
 - ~/.env.local
 
 Finally, anything that shouldn't be committed (e.g., secrets, work-specific env variables)

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/fish
 
 alias sc='systemctl'
 alias sc-status='sc status'

@@ -2,7 +2,7 @@
 
 brew install fzf zellij neovim starship stow bat lazygit yazi \
   btop htop fish eza zoxide duf fastfetch sd
-brew install --cask kitty wezterm font-fira-code-nerd-font \
+brew install --cask kitty wezterm@nightly font-fira-code-nerd-font \
   font-cascadia-code-nf font-cascadia-mono-nf \
   font-caskaydia-cove-nerd-font nikitabobko/tap/aerospace
 

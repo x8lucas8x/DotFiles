@@ -4,6 +4,7 @@ local smart_splits = require("smart_splits")
 local act = wezterm.action
 
 local config = wezterm.config_builder()
+local devbox_host = os.getenv("DEVBOX_HOST") or ""
 local is_tilling_window_environment = os.getenv("IS_TILLING_WINDOW_ENVIRONMENT") == "1"
 
 config.disable_default_key_bindings = true
@@ -25,6 +26,16 @@ config.inactive_pane_hsb = {
 }
 config.unzoom_on_switch_pane = true
 config.automatically_reload_config = true
+
+if devbox_host then
+	config.ssh_domains = {
+		{
+			name = "devbox",
+			remote_address = devbox_host,
+			local_echo_threshold_ms = 10,
+		},
+	}
+end
 
 config.mouse_bindings = {
 	actions.make_copy_mouse_binding(1, "Left", "NONE"),
@@ -331,14 +342,6 @@ end)
 wezterm.on("window-config-reloaded", function(window, _)
 	window:toast_notification("wezterm", "Configuration reloaded!", nil, 4000)
 end)
-
-config.ssh_domains = {
-	{
-		name = "devbox",
-		remote_address = "dev21-uswest1adevc",
-		local_echo_threshold_ms = 10,
-	},
-}
 
 wezterm.on("gui-startup", function(cmd)
 	-- allow `wezterm start -- something` to affect what we spawn

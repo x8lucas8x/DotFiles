@@ -16,3 +16,8 @@ vim.g.lazyvim_python_ruff = "ruff"
 -- only for diagnostics. The rest of LSP support will still be
 -- provided by rust-analyzer.
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
+
+-- Enable seamless navigation between Neovim splits and tmux,
+-- zellij, wezterm, or kitty panes. You will need to set up keymaps
+-- in your tmux, wezterm, or kitty configs to match the Neovim keymaps.
+vim.g.smart_splits_multiplexer_integration = "wezterm"
